@@ -1,11 +1,11 @@
 name: 02 - Workflow Events
 
 on: 
-    #- push
-    #- pull_request
-    #schedule:
-    # - cron: "10 20 * * *"
-    workflow_dispatch
+  #- push
+  #- pull_request
+  schedule:
+    - cron: "10 21 * * *"
+  #workflow_dispatch
 
 jobs:
   echo:
