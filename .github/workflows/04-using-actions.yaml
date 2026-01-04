@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+        run: 
+            working-directory: 04-using-actions/react-app
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -15,11 +18,11 @@ jobs:
         with:
           node-version: 20.x
       - name: Install Dependencies
-        run: |
-            pwd
-            cd 04-using-actions/react-app
-            pwd
-            npm ci
+        #run: |
+        #    pwd /home/runner/work/gh-actions-course/gh-actions-course
+        #    cd 04-using-actions/react-app
+        #    pwd
+        #    npm ci
+        run: npm ci
       - name: Run Unit Tests
-        working-directory: 04-using-actions/react-app
         run: "npm run test"
