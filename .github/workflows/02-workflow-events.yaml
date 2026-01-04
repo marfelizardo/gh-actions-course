@@ -4,7 +4,7 @@ on:
     #- push
     #- pull_request
     schedule:
-     - cron: "57 16 * * *"
+     - cron: "00 20 * * *"
 
 jobs:
   echo:
