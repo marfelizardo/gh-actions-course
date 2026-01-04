@@ -18,6 +18,7 @@ jobs:
         run: |
             pwd
             cd 04-using-actions/react-app
+            pwd
             npm ci
       - name: Run Unit Tests
         working-directory: 04-using-actions/react-app
